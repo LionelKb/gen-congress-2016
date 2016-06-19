@@ -1733,7 +1733,7 @@ p,
 .pricing-item .price .curr {
     display: inline-block;
     font-size: 30px;
-    vertical-align: super;
+    vertical-align: center;
     font-weight: 400;
 }
 
