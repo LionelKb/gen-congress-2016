@@ -4,7 +4,7 @@ import os
 import shutil
 
 
-languages = ["it","fr"]
+languages = ["it","es","pt","fr"]
 
 for language in languages:
     # Importing the language file
