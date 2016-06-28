@@ -7,14 +7,13 @@ import sys
 reload(sys)
 sys.setdefaultencoding("utf-8")
 
-def generatePage(language):
+def generatePage(language,templateFile):
     # Importing the language file
     yamlFile = language+".yaml"
     with open(yamlFile) as fYaml:
       languageYamlData =  yaml.load(fYaml)
     
     # Importing the template file
-    templateFile = "index.j2"
     with open(templateFile) as fTemplate:
         template = Template(fTemplate.read())
         renderedPage = template.render(languageYamlData).encode( "utf-8" )
@@ -29,18 +28,17 @@ def generatePage(language):
     indexFile = "index.html"
     with open(indexFile, 'w') as config:
         config.write(renderedPage)
+    os.chdir("../builder")
 
 languages = ["it","es","pt","fr"]
 
 for language in languages:
-    generatePage(language)
-    
-    os.chdir("../builder")
+    generatePage(language,"index.j2")
+
+generatePage("en","index-en.j2")
 
 # Moving the English page to the root directory
-
-
-# src = "../en/index.html"
-# dst = "../index.html"
-# shutil.move(src, dst)
-# os.removedirs("../en");
+src = "../en/index.html"
+dst = "../index.html"
+shutil.move(src, dst)
+os.removedirs("../en");
