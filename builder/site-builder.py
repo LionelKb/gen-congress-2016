@@ -2,9 +2,15 @@ from jinja2 import Template
 import yaml
 import os
 import shutil
+import sys
 
+# Thanks :
+# http://stackoverflow.com/questions/21129020/how-to-fix-unicodedecodeerror-ascii-codec-cant-decode-byte
+# for resolving the encoding error
+reload(sys)  
+sys.setdefaultencoding('utf8')
 
-languages = ["it","es","pt","fr"]
+languages = ["en","it","es","pt","fr"]
 
 for language in languages:
     # Importing the language file
@@ -33,7 +39,7 @@ for language in languages:
 
 # Moving the English page to the root directory
 
-# src = "../en/index.html"
-# dst = "../index.html"
-# shutil.move(src, dst)
-# os.removedirs("../en");
+src = "../en/index.html"
+dst = "../index.html"
+shutil.move(src, dst)
+os.removedirs("../en");
