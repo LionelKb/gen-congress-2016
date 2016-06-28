@@ -4,15 +4,10 @@ import os
 import shutil
 import sys
 
-# Thanks :
-# http://stackoverflow.com/questions/21129020/how-to-fix-unicodedecodeerror-ascii-codec-cant-decode-byte
-# for resolving the encoding error
-reload(sys)  
-sys.setdefaultencoding('utf8')
+reload(sys)
+sys.setdefaultencoding("utf-8")
 
-languages = ["en","it","es","pt","fr"]
-
-for language in languages:
+def generatePage(language):
     # Importing the language file
     yamlFile = language+".yaml"
     with open(yamlFile) as fYaml:
@@ -34,12 +29,18 @@ for language in languages:
     indexFile = "index.html"
     with open(indexFile, 'w') as config:
         config.write(renderedPage)
+
+languages = ["it","es","pt","fr"]
+
+for language in languages:
+    generatePage(language)
+    
     os.chdir("../builder")
-        
 
 # Moving the English page to the root directory
 
-src = "../en/index.html"
-dst = "../index.html"
-shutil.move(src, dst)
-os.removedirs("../en");
+
+# src = "../en/index.html"
+# dst = "../index.html"
+# shutil.move(src, dst)
+# os.removedirs("../en");
