@@ -8,7 +8,7 @@
   <!-- Favicon -->
   <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon"/>
 
-  <title>Gen 2 Congress 2016</title>
+  <title>{{ headTitle }}</title>
   <style type="text/css">
   img.wp-smiley,
   img.emoji {
@@ -68,13 +68,12 @@
           </button>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
-          <ul id="menu-one-page-navigation-menus" class="gather_main-nav nav navbar-nav navbar-right"><li id="menu-item-1242" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1242"><a title="Home" href="#top">Home</a></li>
-            <li id="menu-item-1243" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1243"><a title="Speakers" href="#speakers">Guests</a></li>
-            <li id="menu-item-1244" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1244"><a title="Schedule" href="#schedule">Schedule</a></li>
-            <li id="menu-item-1245" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1245"><a title="Gallery" href="#gallery">Gallery</a></li>
-            <li id="menu-item-1246" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1246"><a title="Participation" href="#participation">Participation</a></li>
-           <li id="menu-item-1507" class="hidden-sm menu-item menu-item-type-custom menu-item-object-custom menu-item-1507"><a title="Venue" href="#venue">Venue</a></li>
-            <li id="menu-item-1508" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1508"><a title="Contact" href="#contact">Contact</a></li>
+          <ul id="menu-one-page-navigation-menus" class="gather_main-nav nav navbar-nav navbar-right"><li id="menu-item-1242" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1242"><a title="Home" href="#top">{{ home }}</a></li>
+            <li id="menu-item-1243" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1243"><a title="Speakers" href="#speakers">{{ guests }}</a></li>
+            <li id="menu-item-1244" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1244"><a title="Schedule" href="#schedule">{{ schedule }}</a></li>
+            <li id="menu-item-1245" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1245"><a title="Gallery" href="#gallery">{{ gallery }}</a></li>
+            <li id="menu-item-1246" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1246"><a title="Participation" href="#participation">{{ participation}}</a></li>
+            <li id="menu-item-1508" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1508"><a title="Contact" href="#contact">{{ contact }}</a></li>
           </ul>                        </div>
           <!--/.nav-collapse -->
         </div>
@@ -98,14 +97,14 @@
                         <li><a href="../pt/">Português</a></li>
                         <li><a href="../fr/">Français</a></li>
                       </ul>
-                      <h1 class="headline wow fadeInDown" data-wow-delay="0.1s">WORLDWIDE GEN 2 CONGRESS</h1>
+                      <h1 class="headline wow fadeInDown" data-wow-delay="0.1s">{{ mainTitle }}</h1>
                       <div class="when_where wow fadeIn" data-wow-delay="0.4s">
-                        <p class="event_when">November 17th &#8211; 20th 2016</p>
-                        <p class="event_where"><strong>Castel Gandolfo, Italy</strong></p>
+                        <p class="event_when">{{ eventDate }}</p>
+                        <p class="event_where"><strong>{{ eventLocation }}</strong></p>
                       </div>
                       <div class="header_bottom-bg">
-                        <a class="btn btn-default btn-xl wow zoomIn paypal_res_modal" data-wow-delay="0.3s" href="#" data-toggle="modal" data-target="#register-now">REGISTER NOW</a>
-                        <p class="cta_urgency wow fadeIn" data-wow-delay="0.5s">We are waiting for your responses with joy!</p>
+                        <a class="btn btn-default btn-xl wow zoomIn paypal_res_modal" data-wow-delay="0.3s" href="#" data-toggle="modal" data-target="#register-now">{{ registerNow}}</a>
+                        <p class="cta_urgency wow fadeIn" data-wow-delay="0.5s">{{ closingMessage }}</p>
               </div>
 
             </div>
@@ -131,13 +130,13 @@
             <div class="wpb_text_column wpb_content_element ">
               <div class="wpb_wrapper">
                 <p class="lead text-center">
-                 As already known to you, in this year’s programme at the Mariapolis Centre, Catelgandolfo there will be an <b>International Gen 2 Congress for boys and girls</b> (a congress held every 3 years). It will be a very beautiful opportunity to meet from all over the world and live a strong experience of Gen-Opera. We believe that it would be special to be able to realise this moment, altogether, in this year in which the whole of the Opera deepens the reality of <i>‘Jesus Forsaken’</i>. Remember the words of Chiara: <i>“It shall be the second generation that will resound the cry of Jesus Forsaken to the ends of the Earth… And in that cry the entire world will breathe.”</i>
+              {{ eventDescription }}
                 </p>
 
               </div>
             </div>
             <div class="countdown_wrap ">
-              <h6 class="countdown_title text-center">EVENT WILL START IN</h6>
+              <h6 class="countdown_title text-center">{{ eventWillStartIn }}</h6>
     <!-- Countdown JS for the Event Date Starts here.
     TIP: You can change your event time below in the Same Format.  -->
     <ul class="countdown" data-event-date="17 November 2016 09:00:00">
@@ -158,7 +157,7 @@
 <!-- Add to Calendar Plugin.
  For Customization, Visit https://addtocalendar.com/ -->
  <span class="addtocalendar atc-style-theme">
-  <a class="atcb-link"><i class="fa fa-calendar"></i> Add to My Calendar</a>
+  <a class="atcb-link"><i class="fa fa-calendar"></i> {{ addToMyCalendar }}</a>
   <var class="atc_event">
     <var class="atc_date_start">2016-11-17 09:00:00</var>
 
@@ -166,16 +165,12 @@
 
     <var class="atc_timezone">Europe/Rome</var>
 
-    <var class="atc_title">Gen Congress 2016</var>
+    <var class="atc_title">{{ headTitle }}</var>
 
-    <var class="atc_description">Worldwide gen congress with the gen
+    <var class="atc_description">{{ calendarDescription }}
     </var>
 
-    <var class="atc_location">Castel Gandolfo, Italy</var>
-
-    <var class="atc_organizer">CTHthemes</var>
-
-    <var class="atc_organizer_email">cththemes@gmail.com</var>
+    <var class="atc_location">{{ eventLocation }}</var>
   </var>
 </span>
 </div>
@@ -190,7 +185,7 @@
         <div class="wpb_text_column wpb_content_element ">
           <div class="wpb_wrapper">
             <div class="section-title wow fadeInUp">
-              <h4>SPECIAL GUESTS</h4>
+              <h4>{{ specialGuests }}</h4>
             </div>
 
           </div>
@@ -199,25 +194,25 @@
 
           <div class="speaker-info">
             <a href="#speakers">
-              <img width="130" height="130" src="../images/emmaus_voce.jpg" class="img-responsive center-block wp-post-image" alt="Emmaus Maria Voce"sizes="(max-width: 130px) 100vw, 130px" /><p class="speaker_name">Emmaus Maria Voce</p><span>President</span></a>
+              <img width="130" height="130" src="../images/emmaus_voce.jpg" class="img-responsive center-block wp-post-image" alt="Emmaus Maria Voce"sizes="(max-width: 130px) 100vw, 130px" /><p class="speaker_name">Emmaus Maria Voce</p><span>{{ emmausTitle }}</span></a>
             </div>
 
           <div class="speaker-info">
             <a href="#speakers">
-              <img width="130" height="130" src="../images/emmaus_voce.jpg" class="img-responsive center-block wp-post-image" alt="Emmaus Voce"/><p class="speaker_name">Emmaus Maria Voce</p><span>President</span></a>
+              <img width="130" height="130" src="../images/emmaus_voce.jpg" class="img-responsive center-block wp-post-image" alt="Emmaus Voce"/><p class="speaker_name">Emmaus Maria Voce</p><span>{{ emmausTitle }}</span></a>
             </div>
           <div class="speaker-info">
             <a href="#speakers">
-              <img width="130" height="130" src="../images/emmaus_voce.jpg" class="img-responsive center-block wp-post-image" alt="Emmaus Maria Voce"sizes="(max-width: 130px) 100vw, 130px" /><p class="speaker_name">Emmaus Maria Voce</p><span>President</span></a>
+              <img width="130" height="130" src="../images/emmaus_voce.jpg" class="img-responsive center-block wp-post-image" alt="Emmaus Maria Voce"sizes="(max-width: 130px) 100vw, 130px" /><p class="speaker_name">Emmaus Maria Voce</p><span>{{ emmausTitle }}</span></a>
             </div>
 
           <div class="speaker-info">
             <a href="#speakers">
-              <img width="130" height="130" src="../images/emmaus_voce.jpg" class="img-responsive center-block wp-post-image" alt="Emmaus Voce"/><p class="speaker_name">Emmaus Maria Voce</p><span>President</span></a>
+              <img width="130" height="130" src="../images/emmaus_voce.jpg" class="img-responsive center-block wp-post-image" alt="Emmaus Voce"/><p class="speaker_name">Emmaus Maria Voce</p><span>{{ emmausTitle }}</span></a>
             </div>
           <div class="speaker-info">
             <a href="#speakers">
-              <img width="130" height="130" src="../images/emmaus_voce.jpg" class="img-responsive center-block wp-post-image" alt="Emmaus Maria Voce"sizes="(max-width: 130px) 100vw, 130px" /><p class="speaker_name">Emmaus Maria Voce</p><span>President</span></a>
+              <img width="130" height="130" src="../images/emmaus_voce.jpg" class="img-responsive center-block wp-post-image" alt="Emmaus Maria Voce"sizes="(max-width: 130px) 100vw, 130px" /><p class="speaker_name">Emmaus Maria Voce</p><span>{{ emmausTitle }}</span></a>
             </div>
 
                           </div>
@@ -233,7 +228,7 @@
                             <div class="wpb_text_column wpb_content_element ">
                               <div class="wpb_wrapper">
                                 <div class="section-title wow fadeInUp">
-                                  <h4>THE SCHEDULE</h4>
+                                  <h4>{{ theSchedule }}</h4>
                                 </div>
 
                               </div>
@@ -242,10 +237,10 @@
                             <div class="nav-center">
                               <!-- Nav tabs -->
                               <ul class="nav nav-pills" role="tablist">
-                                <li role="presentation" class="active"><a href="#day-one" aria-controls="day-one" role="tab" data-toggle="tab">Day 1</a></li>
-                                <li role="presentation"><a href="#day-two" aria-controls="day-two" role="tab" data-toggle="tab">Day 2</a></li>
-                                <li role="presentation"><a href="#day-three" aria-controls="day-three" role="tab" data-toggle="tab">Day 3</a></li>
-                                <li role="presentation"><a href="#day-four" aria-controls="day-four" role="tab" data-toggle="tab">Day 4</a></li>
+                                <li role="presentation" class="active"><a href="#day-one" aria-controls="day-one" role="tab" data-toggle="tab">{{ Day }} 1</a></li>
+                                <li role="presentation"><a href="#day-two" aria-controls="day-two" role="tab" data-toggle="tab">{{ Day }} 2</a></li>
+                                <li role="presentation"><a href="#day-three" aria-controls="day-three" role="tab" data-toggle="tab">{{ Day }} 3</a></li>
+                                <li role="presentation"><a href="#day-four" aria-controls="day-four" role="tab" data-toggle="tab">{{ Day }} 4</a></li>
                               </ul>
                             </div>
 
@@ -971,7 +966,7 @@
                     <div class="wpb_text_column wpb_content_element ">
                       <div class="wpb_wrapper">
                         <div class="contact-box">
-                          <p><img class="alignnone size-full wp-image-1293 wow zoomIn" src="../images/location-icon.png" alt="location-icon" width="128" height="128" srcset="images/location-icon-67x67.png 67w, images/location-icon.png 128w" sizes="(max-width: 128px) 100vw, 128px" /></p>
+                          <p><img class="alignnone size-full wp-image-1293 wow zoomIn" src="../images/location-icon.png" alt="location-icon" width="128" height="128" srcset="../images/location-icon-67x67.png 67w, ../images/location-icon.png 128w" sizes="(max-width: 128px) 100vw, 128px" /></p>
                           <h5>ADDRESS</h5>
                           <p class="no-rep">Centro Mariapoli Internazionale</p>
                           <p> Via S. Giovanni Battista De La Salle</p>
@@ -985,7 +980,7 @@
                   <div class="wpb_text_column wpb_content_element ">
                     <div class="wpb_wrapper">
                       <div class="contact-box">
-                        <p><img class="alignnone size-full wp-image-1292 wow zoomIn" src="../images/email-icon.png" alt="email-icon" width="128" height="128" data-wow-delay="0.3s" srcset="images/email-icon-67x67.png 67w, images/email-icon.png 128w" sizes="(max-width: 128px) 100vw, 128px" /></p>
+                        <p><img class="alignnone size-full wp-image-1292 wow zoomIn" src="../images/email-icon.png" alt="email-icon" width="128" height="128" data-wow-delay="0.3s" srcset="../images/email-icon-67x67.png 67w, ../images/email-icon.png 128w" sizes="(max-width: 128px) 100vw, 128px" /></p>
                         <h5>CONTACT</h5>
                         <p class="no-rep">centrogen2f@focolare.org</p>
                         <p>+39-06-94798325</p>
@@ -1041,7 +1036,7 @@
 
       <script type='text/javascript'>
       /* <![CDATA[ */
-      var plugins_datas = {"url":"http:\/\/demowp.cththemes.net\/gatherv2\/wp-admin\/admin-ajax.php","cd_day":"day","cd_days":"days","cd_hour":"hour","cd_hours":"hours","cd_minute":"minute","cd_minutes":"minutes","cd_second":"second","cd_seconds":"seconds","invalid_date":"Invalid date. Here's an example: 12 Tuesday 2016 17:30:00"};
+      var plugins_datas = {"url":"http:\/\/demowp.cththemes.net\/gatherv2\/wp-admin\/admin-ajax.php","cd_day":"{{ countDownDay }}","cd_days":"{{ countDownDays }}","cd_hour":"{{ countDownHour }}","cd_hours":"{{ countDownHours }}","cd_minute":"{{ countDownMinute }}","cd_minutes":"{{ countDownMinutes }}","cd_second":"{{ countDownSeconds }}","cd_seconds":"{{ countDownSeconds }}","invalid_date":"Invalid date. Here's an example: 12 Tuesday 2016 17:30:00"};
       /* ]]> */
       </script>
       <script type='text/javascript' src='../gather/js/plugins.js?ver=4.4.3'></script>
