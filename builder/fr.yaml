@@ -68,3 +68,15 @@ EasternEurope_2: "Europe de l’Est/Contin. Extraeuropéens - Assistants"
 WesternEurope: "Europe de l'Ouest/Centrale - Gen and Assistants"
 ParticipationMessage_1: "Le voyage à Rome en bus du 20 novembre coûtera 16€."
 ParticipationMessage_2: "Comme Centre Gen, nous vous demanderons une participation de 10€ par personne pour les zones de l'Europe de l'Ouest et de 5€ pour les zones de l'Europe de Est, à donner directement à Ramiro ou Cris du Centre Gen (pas le Centre Mariapolis)"
+
+
+# FAQ
+faqTitle: "Foire Aux Questions"
+faqQuestion_1: "Comment arriver au lieu du congrès?"
+faqAnswer_1: "La carte et le détail des contacts sont présents dans la section contact. N'hésitez pas à nous contacter."
+faqQuestion_2: "Comment est organisé le logement?"
+faqAnswer_2: "Le logement est inclu dans les frais de participation. Nous remercions le Centre Mariapolis qui nous accueillera pendant toute la durée du congrès."
+faqQuestion_3: "Dans quel langue se déroulera le congrès?"
+faqAnswer_3: "Les langues 'offcielles' du congrès seront l'Italien et l'Anglais. Nous demandons à tous (Italiens compris) de ramener des écouteurs."
+faqQuestion_4: "Comment ça se passe pour les visas pour les résidents non-Européens"
+faqAnswer_4: "Nous vous demandons de nous envoyer le plus tôt possible votre inscription. Il faut au moins 2 mois pour l'obtention d'un visa."
