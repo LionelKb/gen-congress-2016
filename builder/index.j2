@@ -609,7 +609,7 @@
                               <div class="wpb_text_column wpb_content_element ">
                                 <div class="wpb_wrapper">
                                   <div class="section-title wow fadeInUp">
-                                    <h4>AND MORE..</h4>
+                                    <h4>{{ andMoreTitle }}</h4>
                                   </div>
 
                                 </div>
@@ -617,25 +617,26 @@
                             </div></div></div>
                             <div data-wow-delay="" class="wpb_column vc_column_container vc_col-sm-6 vc_col-md-offset-1 vc_col-md-5 wow fadeInLeft"><div class="vc_column-inner "><div class="wpb_wrapper"><div class="benefit-item ">
                             <div class="benefit-icon"><i class="icon icon-speech-streamline-talk-user"></i></div>
-                            <h6 class="benefit-title">Award To Chiara For Peace Education</h6>
-                            <p>For those who wish to participate in the event for the 20th anniversary of the Award to Chiara for Peace Education, at <strong>UNESCO in Paris</strong>, it will be possible.
-                            </p>
-                            <p>Arrival in Paris should be in the evening of <strong>14th Nov, 2016</strong> and departure for Rome either in the evening on 15th or during day on16th Nov, 2016.
-                            </p>
-                            <p>We request you to inform us for those interested in this event so that we can send you more details.</p>
+                            <h6 class="benefit-title">{{ ChiaraPriceTitle }}</h6>
+                            <p>{{ ChiaraPriceMessage_1 }}</p>
+                            <p>{{ ChiaraPriceMessage_2 }}</p>
+                            <p>{{ ChiaraPriceMessage_3}}</p>
                           </div></div></div>
                           </div>
 
                           <div data-wow-delay="" class="wpb_column vc_column_container vc_col-sm-6 vc_col-md-5 wow fadeInRight"><div class="vc_column-inner "><div class="wpb_wrapper">
                             <div class="benefit-item ">
                           <div class="benefit-icon"><i class="icon icon-home-house-streamline"></i></div>
-                          <h6 class="benefit-title">Post-Congress School</h6>
-                          <p>After the Worldwide Congress, we are planning to have a Mobile-Gen School <strong>from 21st to 27th November</strong>. The participation for this school is below.</p>
-                          <p><small>Western Europe - Gen and Assistants: € 391</small></p>
-                          <p><small>Eastern Europe/Contin. Outside Europe - Gen: € 371</small></p>
-                          <p><small>Eastern Europe/Contin. Outside Europe - Assistants: € 376</small></p>
+                          <h6 class="benefit-title">{{ postCongressSchoolTitle }}</h6>
+                          <p> {{ postCongressSchoolMessage }} </p>
+                         <!--  <p><small> {{ postCongressSchoolPrice_1 }} </small></p>
+                          <p><small> {{ postCongressSchoolPrice_2 }} </small></p>
+                          <p><small> {{ postCongressSchoolPrice_3 }} </small></p> -->
+                          <p>{{ postCongressSchoolPrice_1 }} </p>
+                          <p> {{ postCongressSchoolPrice_2 }}</p>
+                          <p>{{ postCongressSchoolPrice_3 }} </p>
                           <p>
-                           <a class="btn btn-success btn-lg wow zoomIn" href="https://docs.google.com/forms/d/14fdT_kz7wyhVh6ksTwxzlxoEfTKhcG4gJ-tDR-TDltw/viewform" target="_blank">REGISTER HERE</a>
+                           <a class="btn btn-success btn-lg wow zoomIn" href="https://docs.google.com/forms/d/14fdT_kz7wyhVh6ksTwxzlxoEfTKhcG4gJ-tDR-TDltw/viewform" target="_blank">{{ regiterPostCongressSchool }}</a>
                           </p>
 
                         </div></div></div>
@@ -652,7 +653,7 @@
               <div class="wpb_text_column wpb_content_element ">
                 <div class="wpb_wrapper">
                   <div class="section-title">
-                    <h4>GALLERY</h4>
+                    <h4>{{ gallery }}</h4>
                   </div>
 
                 </div>
@@ -805,7 +806,7 @@
           <div class="wpb_wrapper">
             <div class="pricing-item highlighted-plan wow zoomIn" data-wow-duration="2s">
               <div class="plan-name">Eastern Europe/Continent Outside Europe - Gen</div>
-              <div class="price">100<span class="curr">€</span></div>
+              <div class="price"><span class="curr">€</span>100</div>
             </div>
 
           </div>
@@ -817,7 +818,7 @@
         <div class="wpb_wrapper">
           <div class="pricing-item highlighted-plan wow zoomIn" data-wow-delay="0.3s" data-wow-duration="2s">
             <div class="plan-name">Eastern Europe/Continent Outside Europe - Assistants</div>
-            <div class="price">112<span class="curr">€</span></div>
+            <div class="price"><span class="curr">€</span>112</div>
           </div>
 
         </div>
@@ -831,7 +832,7 @@
         <div class="pricing-item highlighted-plan wow zoomIn" data-wow-delay="0.6s" data-wow-duration="2s">
           <div class="plan-name">Western Europe</div>
           <div class="plan-name">Gen and Assistants</div>
-          <div class="price">125<span class="curr">€</span></div>
+          <div class="price"><span class="curr">€</span>125</div>
         </div>
 
       </div>

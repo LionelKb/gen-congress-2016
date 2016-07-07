@@ -17,7 +17,7 @@ registerNow: "S'inscrire"
 closingMessage: "Nous attendons vos réponses avec joie!"
 
 # Event Description
-eventDescription: "Comme vous le savez, cette année il y aura <b>un congrès Gen 2 international garçons et filles </b>. Il aura lieu au Centre Mariapoli de Castelgandolfo (congrès qui se réalise chaque 3 ans). Ce sera une belle occasion de rencontrer les Gen2 du monde entier pour vivre une forte expérience de Gen-Opéra.. Il nous semble merveilleux de pouvoir réaliser ce moment tous ensemble dans l’année où tout l’Opera approfondit la réalité de <i>'Jésus Abandonné'</i>. Rappelez vous les paroles de Chiara <i>'Ce sera la deuxième génération qui fera écho le cri de Jésus Abandonné aux extrémités de la terre ... Et dans ce cri le monde entier aura de l’espoir.'</i>"
+eventDescription: "Comme vous le savez, cette année il y aura <b>un congrès Gen 2 international garçons et filles </b>. Il aura lieu au Centre Mariapoli de Castelgandolfo (congrès qui se réalise chaque 3 ans). Ça sera une belle occasion de se retrouver de tout le monde et de vivre une forte expérience de Gen–Opera. Il nous semble merveilleux de pouvoir réaliser ce moment tous ensemble dans l’année où tout l’Opera approfondit la réalité de <i>'Jésus Abandonné'</i>. Rappelez vous les paroles de Chiara <i>'Ce sera la deuxième génération qui fera écho le cri de Jésus Abandonné aux extrémités de la terre ... Et dans ce cri le monde entier aura de l’espoir.'</i>"
 eventWillStartIn: "Le congrès commence dans"
 
 # Countdown
@@ -41,3 +41,21 @@ emmausTitle: "Président"
 # The Schedule
 theSchedule: "Le Programme"
 Day: "Jour"
+
+# And More ..
+andMoreTitle: "Et Plus ..."
+
+# Chiara Price
+ChiaraPriceTitle: "Prix de l'Education Pour La Paix Attribué à Chiara"
+ChiaraPriceMessage_1: "Pour ceux/celles souhaitent participer à l'évèvement du 20ème anniversaire de la remise du prix de l'éducation Pour la paix attribué à Chiara, at <strong>l'UNESCO à Paris</strong>, ce sera possible."
+ChiaraPriceMessage_2: "L'arrivée à Paris devrait se faire la nuit du <strong>14 Novembre</strong>. Départ pour Rome soit la nuit du 15 novembre ou au cours de la journée du 16 novembre."
+ChiaraPriceMessage_3: "Nous vous prions de nous faire savoir si vous êtes intéressé par cette proposition afin que nous puissions vous envoyer plus de détails."
+
+# Post Congress School
+postCongressSchoolTitle: "Ecole Post-Congrès"
+postCongressSchoolMessage: "Après le congrès international, nous avons prévu une école gen 'volante' <strong>du 21 au 27 novembre</strong>. La participation pour cette école est précisée ci-bas."
+postCongressSchoolPrice_1: "Europe de l'Ouest/Centrale - Gen and Assistants: € 391"
+postCongressSchoolPrice_2: "Europe de l'Est/Contin. Extraeuropéens - Gen: € 371"
+postCongressSchoolPrice_3: "Europe de l’Est/Contin. Extraeuropéens - Assistants: € 376"
+
+regiterPostCongressSchool: "S'inscrire"
