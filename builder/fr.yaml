@@ -80,3 +80,14 @@ faqQuestion_3: "Dans quel langue se déroulera le congrès?"
 faqAnswer_3: "Les langues 'offcielles' du congrès seront l'Italien et l'Anglais. Nous demandons à tous (Italiens compris) de ramener des écouteurs."
 faqQuestion_4: "Comment ça se passe pour les visas pour les résidents non-Européens"
 faqAnswer_4: "Nous vous demandons de nous envoyer le plus tôt possible votre inscription. Il faut au moins 2 mois pour l'obtention d'un visa."
+
+# Contact
+contactVenue: "CONTACT"
+
+# Address
+addressVenue: "ADDRESSE"
+detailsArrival: "Arrivée: 16 Nov au soir, avant 22:00"
+
+# Invitation
+invitMessage_1: "RENCONTRONS-NOUS TOUS ENSEMBLE"
+invitMessage_2: "NOUS T'ATTENDONS"
