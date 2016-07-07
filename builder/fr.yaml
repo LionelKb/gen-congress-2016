@@ -59,3 +59,12 @@ postCongressSchoolPrice_2: "Europe de l'Est/Contin. Extraeuropéens - Gen: € 3
 postCongressSchoolPrice_3: "Europe de l’Est/Contin. Extraeuropéens - Assistants: € 376"
 
 regiterPostCongressSchool: "S'inscrire"
+
+
+
+# Participation
+EasternEurope_1: "Europe de l'Est/Contin. Extraeuropéens - Gen"
+EasternEurope_2: "Europe de l’Est/Contin. Extraeuropéens - Assistants"
+WesternEurope: "Europe de l'Ouest/Centrale - Gen and Assistants"
+ParticipationMessage_1: "Le voyage à Rome en bus du 20 novembre coûtera 16€."
+ParticipationMessage_2: "Comme Centre Gen, nous vous demanderons une participation de 10€ par personne pour les zones de l'Europe de l'Ouest et de 5€ pour les zones de l'Europe de Est, à donner directement à Ramiro ou Cris du Centre Gen (pas le Centre Mariapolis)"

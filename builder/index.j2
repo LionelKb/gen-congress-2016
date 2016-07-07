@@ -794,7 +794,7 @@
           <div class="wpb_text_column wpb_content_element ">
             <div class="wpb_wrapper">
               <div class="section-title">
-                <h4>PARTICIPATION</h4>
+                <h4>{{ participation }}</h4>
               </div>
 
             </div>
@@ -805,8 +805,8 @@
         <div class="wpb_text_column wpb_content_element ">
           <div class="wpb_wrapper">
             <div class="pricing-item highlighted-plan wow zoomIn" data-wow-duration="2s">
-              <div class="plan-name">Eastern Europe/Continent Outside Europe - Gen</div>
-              <div class="price"><span class="curr">€</span>100</div>
+              <div class="plan-name">{{ EasternEurope_1 }}</div>
+              <div class="price">100<span class="curr">€</span></div>
             </div>
 
           </div>
@@ -817,8 +817,8 @@
       <div class="wpb_text_column wpb_content_element ">
         <div class="wpb_wrapper">
           <div class="pricing-item highlighted-plan wow zoomIn" data-wow-delay="0.3s" data-wow-duration="2s">
-            <div class="plan-name">Eastern Europe/Continent Outside Europe - Assistants</div>
-            <div class="price"><span class="curr">€</span>112</div>
+            <div class="plan-name">{{ EasternEurope_2 }}</div>
+            <div class="price">112<span class="curr">€</span></div>
           </div>
 
         </div>
@@ -830,9 +830,8 @@
     <div class="wpb_text_column wpb_content_element ">
       <div class="wpb_wrapper">
         <div class="pricing-item highlighted-plan wow zoomIn" data-wow-delay="0.6s" data-wow-duration="2s">
-          <div class="plan-name">Western Europe</div>
-          <div class="plan-name">Gen and Assistants</div>
-          <div class="price"><span class="curr">€</span>125</div>
+          <div class="plan-name">{{ WesternEurope }}</div>
+          <div class="price">125<span class="curr">€</span></div>
         </div>
 
       </div>
@@ -842,12 +841,8 @@
 
 </div>
 
-  <p>
-   The journey to Rome by bus on 20th November will cost €16.
-  </p>
-  <p>
-    As the Gen Centres, we request a participation of €10 per person for the zones of Western Europe and €5 for the zones of Eastern Europe, to be handed directly to Ramiro or Cris from the Gen Centres (not to the Mariapolis Centre).
-  </p>
+  <p>{{ ParticipationMessage_1 }}</p>
+  <p>{{ ParticipationMessage_2 }}</p>
 
 </div>
 <!-- end .container -->
